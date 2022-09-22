@@ -1,0 +1,15 @@
+service: serverless-aws
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: java8
+
+package:
+  artifact: target/hello-dev.jar
+
+functions:
+  hello:
+    handler: com.serverless.Handler
+
